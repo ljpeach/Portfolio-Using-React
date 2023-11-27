@@ -1,4 +1,8 @@
 import { Navigation } from "./index";
 export default function Header() {
-    return (<></>);
+    return (
+        <header>
+            <Navigation />
+        </header>
+    );
 }
