@@ -1,7 +1,9 @@
 export default function AboutPage() {
     return (
-        <div>
-
-        </div>
+        <section>
+            <h2>About Liam Peachey</h2>
+            <p>
+            </p>
+        </section>
     );
 }
