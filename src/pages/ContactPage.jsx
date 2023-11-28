@@ -46,6 +46,7 @@ export default function ContactPage() {
     )
     return (
         <div>
+            <h2>Contact Me</h2>
             <form className="" onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" onBlur={handleBlur} onChange={handleChange} value={name} />
