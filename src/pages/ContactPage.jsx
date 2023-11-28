@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function ContactPage() {
     const [missingFields, setMissingFields] = useState([]);
     const [emailError, setEmailError] = useState(true);
@@ -19,7 +19,7 @@ export default function ContactPage() {
     const handleBlur = (e) => {
         e.preventDefault();
         if (e.target.value == "") {
-            setMissingFields([...missingFields, e.target.id]);
+            if (!missingFields.includes(e.target.id)) { setMissingFields([...missingFields, e.target.id]); }
         }
         else if (missingFields.includes(e.target.id)) {
             setMissingFields(missingFields.filter((id) => id != e.target.id));
@@ -33,7 +33,6 @@ export default function ContactPage() {
                 break;
             case 'email':
                 setEmail(e.target.value)
-                setEmailError(email.match(/^([\w\+~-]+)@([\w]+)\.([a-z]{2,63})$/));
                 break;
             case 'message':
                 setMessage(e.target.value)
@@ -42,9 +41,9 @@ export default function ContactPage() {
                 break;
         }
     }
-    const handleInvalid = (e) => {
-
-    };
+    useEffect(
+        () => setEmailError(email.match(/^([\w\+~-]+)@([\w]+)\.([a-z]{2,63})$/))
+    )
     return (
         <div>
             <form className="" onSubmit={handleSubmit}>
