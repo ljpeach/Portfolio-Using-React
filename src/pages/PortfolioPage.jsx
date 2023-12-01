@@ -8,7 +8,7 @@ export default function PortfolioPage() {
                     {
                         projectTitle: 'Social Task App',
                         previewImage: 'https://raw.githubusercontent.com/Seidler93/Social-Task-App/main/public/images/tasks-img.png',
-                        deployLink: 'https://ljpeach.github.io/Portfolio/#',
+                        deployLink: 'https://peaceful-beach-14774-2857744df451.herokuapp.com/',
                         gitLink: 'https://github.com/Seidler93/Social-Task-App',
                         description: 'Node, Express, Bootstrap, Sequelize, REST'
                     },
@@ -16,7 +16,7 @@ export default function PortfolioPage() {
                         projectTitle: 'Flight Travel Finder',
                         previewImage: 'https://raw.githubusercontent.com/ljpeach/Flight-Travel-Finder/main/assets/images/preview.png',
                         deployLink: 'https://ljpeach.github.io/Portfolio/#',
-                        gitLink: 'https://github.com/ljpeach/Flight-Travel-Finder',
+                        gitLink: 'https://ljpeach.github.io/Flight-Travel-Finder/',
                         description: 'HTML, Tailwind, JavaScript, 3rd Party API'
                     },
                     {
