@@ -1,16 +1,16 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-export default function Navigation() {
-    const [currentPage, setCurrentPage] = useState('about');
-    const handleNavActive = (page) => { setCurrentPage(page) };
+import { Link, useLocation } from 'react-router-dom';
+export default function Navigation({ setCurrentPage }) {
+    const handleNavActive = (page) => { };
+    const currentPage = useLocation().pathname;
+    console.log(currentPage);
     return (
         <nav className=''>
-            <ul className='navbar-nav d-md-flex justify-content-sm-between flex-sm-row'>
+            <ul className='navbar-nav d-md-flex justify-content-sm-around flex-sm-row'>
                 <li className='nav-item m-2'>
                     <Link
                         key={1}
                         to="/"
-                        className={currentPage === 'about' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
                         onClick={() => handleNavActive('about')}
                     >
                         About Me
@@ -20,7 +20,7 @@ export default function Navigation() {
                     <Link
                         key={2}
                         to="/portfolio"
-                        className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
                         onClick={() => handleNavActive('portfolio')}
                     >
                         Portfolio
@@ -30,13 +30,23 @@ export default function Navigation() {
                     <Link
                         key={3}
                         to="/contact"
-                        className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
                         onClick={() => handleNavActive('contact')}
                     >
                         Contact
                     </Link>
                 </li>
                 <li className='nav-item m-2'>
+                    <Link
+                        key={4}
+                        to="/resume"
+                        className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+                        onClick={() => handleNavActive('resume')}
+                    >
+                        Resume
+                    </Link>
+                </li>
+                {/* <li className='nav-item m-2'>
                     <Link
                         key={4}
                         to="./src/assets/files/resume.pdf"
@@ -46,7 +56,7 @@ export default function Navigation() {
                     >
                         Resume
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

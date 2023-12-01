@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   width: 100vw;
@@ -7,8 +7,37 @@
   /* text-align: center; */
 }
 
+body,
+.project-desc,
+#portfolio,
+#resume,
+#error-page,
+#about,
+#contact {
+  background-color: #777386;
+}
+
+.project-box {
+  border: 3px solid #b4b3b3;
+}
+
+.project-desc {
+  margin-left: -3px;
+  border: 3px solid #b4b3b3;
+  border-left-color: #777386;
+}
+
+header,
+footer {
+  background-color: #6a6892;
+}
+
+#resume a {
+  color: peachpuff;
+}
+
 .active {
-  color: #888 !important;
+  color: #b4b3b3 !important;
   border-bottom: 1px solid #888;
 }
 
@@ -35,8 +64,12 @@ footer span {
 
 .project-section {
   object-fit: cover;
-  height: 100%;
+  height: 300px;
   width: 100%;
+}
+
+.git-icon {
+  height: 50px;
 }
 
 footer .logo {

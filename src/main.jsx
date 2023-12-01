@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 // Pages
 import App from './App.jsx'
-import { AboutPage, ContactPage, ErrorPage, PortfolioPage } from './pages'
+import { AboutPage, ContactPage, ErrorPage, PortfolioPage, ResumePage } from './pages'
 
 // Set up routes + their associated components.
 const router = createBrowserRouter([
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <ContactPage />
+      },
+      {
+        path: 'resume',
+        element: <ResumePage />
       }
     ]
   }
