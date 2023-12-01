@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
-        <footer className=''>
+        <footer className='border border-bottom-0 border-start-0 border-end-0 position-absolute bottom-0 w-100'>
             <ul className='nav text-center'>
                 <li className='nav-item col-4'>
                     <Link key={1} to='https://github.com/ljpeach' target='_blank' className='nav-link'>

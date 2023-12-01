@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 export default function ContactPage() {
     const [missingFields, setMissingFields] = useState([]);
-    const [emailError, setEmailError] = useState(true);
+    const [emailError, setEmailError] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -9,7 +9,6 @@ export default function ContactPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!name || !email || !message || emailError) {
-            console.log('here');
             console.log(name, email, message, emailError);
             return;
         }
