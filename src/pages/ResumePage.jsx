@@ -6,7 +6,7 @@ export default function ResumePage() {
             <p>
                 Download my <span>
                     <Link
-                        to="./src/assets/files/resume.pdf"
+                        to="https://ljpeach.github.io/Portfolio/assets/files/resume.pdf"
                         target='_blank'
                         download
                     >

@@ -42,7 +42,7 @@ export default function PortfolioPage() {
                     },
                     {
                         projectTitle: 'Social Network Back End',
-                        previewImage: './src/assets/react.svg',
+                        previewImage: 'https://raw.githubusercontent.com/ljpeach/Portfolio/main/assets/images/filler_clouds.jpg',
                         deployLink: 'https://youtu.be/rQTliNys_20',
                         gitLink: 'https://github.com/ljpeach/Social-Network-API',
                         description: 'Node, Express, MongoDB, REST'
