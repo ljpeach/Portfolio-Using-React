@@ -48,12 +48,12 @@ export default function ContactPage() {
         <div>
             <h2>Contact Me</h2>
             <form className="" onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" onBlur={handleBlur} onChange={handleChange} value={name} />
-                <label htmlFor="email">Email Address:</label>
-                <input type="email" id="email" onBlur={handleBlur} onChange={handleChange} value={email} />
-                <label htmlFor="message">Message:</label>
-                <textarea name="email-body" id="message" cols="30" rows="10" onBlur={handleBlur} onChange={handleChange} value={message}></textarea>
+                <label className="form-label" htmlFor="name">Name:</label>
+                <input type="text" id="name" className="form-control" onBlur={handleBlur} onChange={handleChange} value={name} />
+                <label className="form-label" htmlFor="email">Email Address:</label>
+                <input type="email" id="email" className="form-control" onBlur={handleBlur} onChange={handleChange} value={email} />
+                <label className="form-label" htmlFor="message">Message:</label>
+                <textarea name="email-body" id="message" cols="30" rows="10" className="form-control" onBlur={handleBlur} onChange={handleChange} value={message}></textarea>
                 {missingFields.length ? (<p>Fields {missingFields.join(', ')} must be filled in.</p>) : (<></>)}
                 {!emailError ? (<p>Please enter a valid email!</p>) : (<></>)}
                 <button>Submit</button>
