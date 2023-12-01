@@ -5,12 +5,12 @@ export default function Footer() {
             <ul className='nav text-center'>
                 <li className='nav-item col-4'>
                     <Link key={1} to='https://github.com/ljpeach' target='_blank' className='nav-link'>
-                        <img className='logo' src="./src/assets/images/github-icons/github-mark.svg" alt="GitHub" />
+                        <img className='logo' src="https://raw.githubusercontent.com/ljpeach/Portfolio-Using-React/0dbc6f5d8a08b38b43d478a166ebb243e329dbe4/src/assets/images/github-icons/github-mark.svg" alt="GitHub" />
                     </Link>
                 </li>
                 <li className='nav-item col-4'>
                     <Link key={2} to='https://www.linkedin.com/in/liam-peachey/' target='_blank' className='nav-link'>
-                        <img className='logo' src="./src/assets/images/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn" />
+                        <img className='logo' src="https://raw.githubusercontent.com/ljpeach/Portfolio-Using-React/main/src/assets/images/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn" />
                     </Link>
                 </li>
                 <li className='nav-item col-4'>

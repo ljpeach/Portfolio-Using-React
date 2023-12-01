@@ -8,7 +8,7 @@ export default function Project({ projectTitle, previewImage, deployLink, gitLin
                             {projectTitle}
                         </h3>
                     </a>
-                    <a href={gitLink} target="_blank" className=""><img src="./src/assets/images/github-icons/github-mark.svg" alt="git" className="git-icon" /></a>
+                    <a href={gitLink} target="_blank" className=""><img src="https://raw.githubusercontent.com/ljpeach/Portfolio-Using-React/0dbc6f5d8a08b38b43d478a166ebb243e329dbe4/src/assets/images/github-icons/github-mark.svg" alt="git" className="git-icon" /></a>
                 </section>
                 <p className="p-2 m-0">{description}</p>
             </div>

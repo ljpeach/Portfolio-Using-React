@@ -46,17 +46,6 @@ export default function Navigation({ setCurrentPage }) {
                         Resume
                     </Link>
                 </li>
-                {/* <li className='nav-item m-2'>
-                    <Link
-                        key={4}
-                        to="./src/assets/files/resume.pdf"
-                        target='_blank'
-                        download
-                        className='nav-link'
-                    >
-                        Resume
-                    </Link>
-                </li> */}
             </ul>
         </nav>
     );
