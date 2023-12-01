@@ -15,7 +15,7 @@ export default function PortfolioPage() {
                     {
                         projectTitle: 'Flight Travel Finder',
                         previewImage: 'https://raw.githubusercontent.com/ljpeach/Flight-Travel-Finder/main/assets/images/preview.png',
-                        deployLink: 'https://ljpeach.github.io/Portfolio/#',
+                        deployLink: 'https://ljpeach.github.io/Flight-Travel-Finder/',
                         gitLink: 'https://ljpeach.github.io/Flight-Travel-Finder/',
                         description: 'HTML, Tailwind, JavaScript, 3rd Party API'
                     },
