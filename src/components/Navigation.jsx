@@ -26,7 +26,7 @@ export default function Navigation({ setCurrentPage }) {
                         Portfolio
                     </Link>
                 </li>
-                <li className='nav-item m-2'>
+                {/* <li className='nav-item m-2'>
                     <Link
                         key={3}
                         to="/contact"
@@ -35,7 +35,7 @@ export default function Navigation({ setCurrentPage }) {
                     >
                         Contact
                     </Link>
-                </li>
+                </li> */}
                 <li className='nav-item m-2'>
                     <Link
                         key={4}

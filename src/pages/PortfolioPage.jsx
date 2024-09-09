@@ -46,6 +46,13 @@ export default function PortfolioPage() {
                         deployLink: 'https://youtu.be/rQTliNys_20',
                         gitLink: 'https://github.com/ljpeach/Social-Network-API',
                         description: 'Node, Express, MongoDB, REST'
+                    },
+                    {
+                        projectTitle: 'Big City Jobs',
+                        previewImage: 'https://raw.githubusercontent.com/ljpeach/Portfolio/main/assets/images/filler_clouds.jpg',
+                        deployLink: 'https://cryptic-gorge-45528-e8e049cdd22a.herokuapp.com/',
+                        gitLink: 'https://github.com/kevinpatto/Big-City-Jobs',
+                        description: 'Node, Express, MongoDB, Bootstrap, MERN stack, JWT'
                     }
                 ].map((project, i) => <Project key={i} {...project} />)}
             </div>
